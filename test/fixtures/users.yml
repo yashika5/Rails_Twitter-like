@@ -12,3 +12,4 @@ rekha:
  name: rekha
  email: rekha@example.com
  password_digest: <%= User.digest('password369') %>
+
