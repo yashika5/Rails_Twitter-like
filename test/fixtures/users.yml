@@ -12,4 +12,26 @@ rekha:
  name: rekha
  email: rekha@example.com
  password_digest: <%= User.digest('password369') %>
+ admin: true
 
+chandan:
+ name: chandan
+ email: chandan@example.com
+ password_digest: <%= User.digest('chandan123') %>
+
+lana:
+ name: Lana Kane
+ email: hands@example.com
+ password_digest: <%= User.digest('password123') %>
+
+malory:
+ name: Malory Archer
+ email: boss@example.com
+ password_digest: <%= User.digest('password123') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+ name: <%= "User #{n}" %>
+ email: <%= "user-#{n}@example.com" %>
+ password_digest: <%= User.digest('password') %>
+<% end %>
